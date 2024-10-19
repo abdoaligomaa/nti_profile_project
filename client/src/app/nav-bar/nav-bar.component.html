@@ -1,0 +1,13 @@
+<header>
+  <a href="#" class="logo">AbdelRahman</a>
+  <nav class="navigation">
+    <a href="../services">Service</a>
+    <a href="../projects">Projects</a>
+    <a href="../about">About</a>
+    <a href="../contact">Contact</a>
+
+    <li *ngIf="isUserAuthenticated()" class="logout-button">
+      <button (click)="logout()">Logout</button>
+    </li>
+  </nav>
+</header>

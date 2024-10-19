@@ -1,0 +1,69 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Lighter background */
+}
+
+.main h2 {
+  color: #333333; /* Dark grey for text */
+  font-size: 1.6em; /* Slightly larger */
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff6b6b; /* Softer red accent color */
+  font-size: 3.2em; /* Larger font for emphasis */
+  font-weight: 700;
+}
+
+.main h3 {
+  color: #444444; /* Darker shade of grey for contrast */
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 25px; /* Slightly reduced margin */
+}
+
+.main-btn {
+  color: #ffffff;
+  background-color: #ff6b6b; /* Softer red for button */
+  text-decoration: none;
+  font-size: 1.2em; /* Larger text size */
+  font-weight: 600;
+  display: inline-block;
+  padding: 1em 2.5em; /* Increased padding for more space */
+  letter-spacing: 1.5px; /* Slightly increased letter spacing */
+  border-radius: 12px; /* Softer rounded corners */
+  margin-bottom: 40px;
+  transition: all 0.4s ease;
+}
+
+.main-btn:hover {
+  background-color: #333333; /* Dark grey on hover */
+  transform: scale(1.08); /* Slightly reduced hover effect */
+}
+
+.social-media a {
+  color: #666666; /* Grey for social icons */
+  font-size: 1.6em; /* Smaller icons */
+  padding: 20px; /* Reduced padding */
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ff6b6b; /* Red hover effect */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #ff6b6b; /* Accent color for title */
+  font-size: 2.4em; /* Larger font for title */
+  font-weight: 800;
+  margin-bottom: 25px; /* Slightly reduced margin */
+}

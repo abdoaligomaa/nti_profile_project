@@ -1,0 +1,35 @@
+<section class="cards" id="service">
+  <h2 class="title">Services</h2>
+  <div class="content">
+    <div class="card" *ngFor="let service of services">
+      <a [href]="'mailto:' + service.email + '?subject=' + service.title + ' Inquiry'">
+        <div class="icon"><i [class]="service.icon"></i></div>
+        <div class="info">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      </a>
+      <button (click)="deleteService(service._id)">Delete</button>
+      <button (click)="updateService(service._id)">Update</button>
+    </div>
+  </div>
+  <button class="add" (click)="addService()">add new service</button>
+</section>
+
+  <section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+      <div class="card" *ngFor="let project of projects">
+        <a [href]="project.link" target="_blank">
+          <div class="icon"><i [class]="project.icon"></i></div>
+          <div class="info">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </div>
+        </a>
+        <button (click)="deleteProject(project._id)">Delete</button>
+        <button (click)="updateProject(project._id)">Update</button>
+      </div>
+    </div>
+    <button class="add" (click)="addProject()">add new project</button>
+  </section>

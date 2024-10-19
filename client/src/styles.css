@@ -1,0 +1,194 @@
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e7ecef;
+  color: #000000;
+}
+
+section{
+
+  padding: 100px 200px;
+}
+
+.contant {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #0353a4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  color: #000000;
+}
+
+.info h3 {
+  color: #0353a4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  header {
+      padding: 10px 100px;
+  }
+
+  section {
+      padding: 100px 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+      padding: 10px 50px;
+      flex-direction: column;
+  }
+
+  .navigation {
+      margin-top: 10px;
+  }
+
+  section {
+      padding: 100px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+      padding: 10px 20px;
+  }
+
+  section {
+      padding: 80px 20px;
+  }
+
+  .main h2 span {
+      font-size: 2.5em;
+  }
+
+  .main h3 {
+      font-size: 1.5em;
+  }
+
+  .main-btn {
+      padding: 0.75em 1.5em;
+  }
+
+  .social-media a {
+      padding: 20px;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+      padding: 10px 10px;
+  }
+
+  .logo {
+      font-size: 1.5em;
+  }
+
+  .navigation a {
+      font-size: 1em;
+      padding-left: 20px;
+  }
+
+  .main h2 {
+      font-size: 1.2em;
+  }
+
+  .main h2 span {
+      font-size: 2em;
+  }
+
+  .main h3 {
+      font-size: 1.2em;
+  }
+
+  .main-btn {
+      padding: 0.5em 1em;
+  }
+
+  .social-media a {
+      font-size: 1.5em;
+      padding: 15px;
+  }
+
+  .title {
+      font-size: 1.8em;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .icon {
+      font-size: 5em;
+  }
+
+  .contact .icon {
+      font-size: 3em;
+  }
+
+  .contact .info p {
+      font-size: 1.2em;
+  }
+}
+
+@media (min-width: 200px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 10px;
+  }
+
+  .form-group:last-child {
+    margin-right: 0;
+  }
+}
